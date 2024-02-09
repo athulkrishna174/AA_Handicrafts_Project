@@ -453,6 +453,29 @@ header .icons #menu-bars{
     color: var(--green);
 }
 
+.loader-container{
+    position: fixed;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.loader-container img{
+    width: 30rem;
+    filter: invert(65%) sepia(7%) saturate(400%) hue-rotate(93deg) brightness(85%) contrast(79%);
+}
+
+.loader-container.fade-out{
+    top: 110%;
+    opacity: 0;
+}
+
 /* media queries */
 
 @media (max-width:991px){
