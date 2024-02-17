@@ -390,7 +390,8 @@ header .icons #menu-bars{
 }
 
 .connect form .inputBox .input input,
-.connect form .inputBox .input textarea{
+.connect form .inputBox .input textarea,
+.connect form .inputBox .input select{
     background: #eee;
     border-radius: .5rem;
     padding: 1rem;
@@ -401,8 +402,13 @@ header .icons #menu-bars{
     width: 100%;
 }
 
+.connect form .inputBox .input .default-craft{
+    color: #848ca2;
+}
+
 .connect form .inputBox .input input:focus,
-.connect form .inputBox .input textarea:focus{
+.connect form .inputBox .input textarea:focus,
+.connect form .inputBox .input select:focus{
     border: .1rem solid var(--green);
 }
 
@@ -474,6 +480,11 @@ header .icons #menu-bars{
 .loader-container.fade-out{
     top: 110%;
     opacity: 0;
+}
+
+#brand-name{
+    color: var(--green);
+    font-weight: bolder;
 }
 
 /* media queries */
