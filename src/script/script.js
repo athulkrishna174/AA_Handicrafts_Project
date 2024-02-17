@@ -1,3 +1,7 @@
+const EMPTY_STRING = "";
+const DOT = `.`;
+const SPACE = ' ';
+
 let menu = document.querySelector('#menu-bars');
 let navbar = document.querySelector('.navbar');
 
@@ -69,8 +73,6 @@ function isDefault(){
     }
 }
 
-const EMPTY_STRING = "";
-
 const connectForm = document.querySelector('#connect-form'); 
 
 function removeValidity(){
@@ -116,9 +118,6 @@ connectForm.addEventListener('submit', event =>{
         }     
     }
 
-    const fullStop = `.`;
-    const space = ' ';
-
     let contactMeString = `\r\nMy Phone: ${phnNumber.value}\r\n`;
     let emailString = EMPTY_STRING;
     let addrString = EMPTY_STRING;
@@ -135,7 +134,7 @@ connectForm.addEventListener('submit', event =>{
         messageString = `Message: ${message.value}\r\n`;
     }
        
-    const content = nameString + craftString + fullStop + space + contactMeString + space + emailString + space + addrString + space + messageString;
+    const content = nameString + craftString + DOT + SPACE + contactMeString + SPACE + emailString + SPACE + addrString + SPACE + messageString;
 
     const num = +919544787413;
 
