@@ -108,11 +108,11 @@ connectForm.addEventListener('submit', event =>{
     let nameString = `Hai my name is ${name.value}, I have to know more about AA Handicrafts`;
     
     let craftString = EMPTY_STRING;
-    if(craftName.value != 'default'){
+    if(craftName.value != null && craftName.value != EMPTY_STRING){
         if(quantity.value != null && quantity.value != EMPTY_STRING){
-            craftString = ` and also want ${quantity.value} ${getCraftById(craftName.value)}s`;
+            craftString = ` and also want ${quantity.value} ${craftName.value}`;
         } else{
-            craftString = ` and also want ${getCraftById(craftName.value)}s`;
+            craftString = ` and also want ${craftName.value}`;
         }     
     }
 
